@@ -1,29 +1,21 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-locale : "en"
-title: JBLinuxClicks
-title_separator : "-"
-email: zerocool.jothi@gmail.com
-name: "JothiBasu Kamaraj"
-description: "Devops Automation and Cloud Migration"
-twitter_username: jblinuxclicks
-github_username: jblinuxclicks
-minimal_mistakes_skin: default
-search: true
-
+# Site Settings
+locale                   : "en"
+title                    : "JBLinuxClicks"
+title_separator          : "-"
+name                     : "JothiBasu Kamaraj"
+description              : "Devops and Cloud Automation projects"
+url                      : "https://www.jblinuxclicks.xyz"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -55,32 +47,66 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Social Sharing
+twitter:
+  username               : jblinuxclicks
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : #"google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : #"UA-36248438-2"
 
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Site Author
+author:
+  name             : "JothiBasu Kamaraj"
+  avatar           : "/assets/images/photo_bio1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Senior Devops Engineer @ Risksense by day."
+  location         : "Chennai, INDIA"
+  email            : "zerocool.jothi@gmail.com"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "jblinuxclicks"
+  google_plus      :
+  keybase          : "jblinuxclicks"
+  instagram        :
+  lastfm           :
+  linkedin         : "jothibasu-kamaraj-573305126"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : "7560307/oliyavan" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  steam            :
+  tumblr           :
+  twitter          : "@jblinuxclicks"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+
+
 # Reading Files
 include:
   - .htaccess
@@ -117,6 +143,15 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
 # Markdown Processing
 kramdown:
   input: GFM
@@ -141,14 +176,14 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Plugins (previously gems:)
-plugins:
+
+# Plugins
+gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -156,38 +191,37 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji  
+  - jemoji
 
-author:
-  name   : "JothiBasu Kamaraj"
-  avatar : "/assets/images/photo_bio1.jpg"
-  bio    : "Devops and Cloud Engineer @ Risksense by day."
-  location : "Chennai, India"
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jblinuxclicks.xyz"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jblinuxclicks"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jblinuxclicks"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/jblinuxclicks"
 
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/jblinuxclicks"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jblinuxclicks"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/jblinuxclicks"
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
 
 # HTML Compression
 # - http://jch.penibelst.de/
@@ -196,6 +230,8 @@ compress_html:
   ignore:
     envs: development
 
+
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -210,15 +246,8 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
