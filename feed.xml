@@ -5,7 +5,7 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JBLinuxClicks Blog - Articles</title>
-    <description>Latest blog posts from jblinuxclicks.xyz</description>
+    <description>Latest blog posts from jothibasukamaraj.com</description>
     <link>{{ site.url }}</link>
     {% for post in site.posts %}
       {% unless post.draft %}
