@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "JothiBasuKamaraj"
+title                    : "JothiBasu Kamaraj"
 title_separator          : "-"
 name                     : "JothiBasu Kamaraj"
 description              : "Devops and Cloud Automation projects"
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "JothiBasu Kamaraj"
   avatar           : "/assets/images/photo_bio1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Senior Devops Engineer @ Risksense by day."
+  bio              : "Lead Devops Engineer @ Innova Solutions by day."
   location         : "Chennai, INDIA"
   email            : "zerocool.jothi@gmail.com"
   uri              :
@@ -94,7 +94,7 @@ author:
   keybase          : "jblinuxclicks"
   instagram        :
   lastfm           :
-  linkedin         : "jothibasu-kamaraj-573305126"
+  linkedin         : "jothibasu-kamaraj"
   pinterest        :
   soundcloud       :
   stackoverflow    : "7560307/oliyavan" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
